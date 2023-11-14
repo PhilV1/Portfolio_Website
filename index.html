@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Own Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <title>Phil Werpub Portfolio</title>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="name">
+        <a href="#intro" class="navImg">
+          <img class="portraitImg"
+            src="https://images.unsplash.com/photo-1587397845856-e6cf49176c70?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aGVhZHxlbnwwfHwwfHx8MA%3D%3D"
+            alt="Portrait von mir">
+
+          <h1>Phil Werpub</h1>
+        </a>
+      </div>
+      <ul class="navbar">
+        <li><a href="#intro">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Dropdown Button hidden if display >650px-->
+    <div class="dropdown">
+      <button class="dropbtn"><img src="./images/burger-menu-svgrepo-com.svg" width="30px" alt=""></button>
+      <div class="dropdown-content">
+        <a href="#intro">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+
+  </header>
+
+  <main>
+    <section class="introduction" id="intro">
+      <h2>Hey, I am <br><span class="introName">Phil Werpub</span></h2>
+      <p>A frontend Webdeveloper</p>
+      <div class="logosIntro">
+        <a target="_blank" href="https://github.com/PhilV1"><i class="fa-brands fa-github"></i></a>
+        <a target="_blank" href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a target="_blank" href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a target="_blank" href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <a href="#projects"><button class="btn intro">Projects</button></a>
+    </section>
+
+    <section class="about" id="about">
+      <article>
+        <h2>About me</h2>
+        <hr>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A vitae repellat dolore perspiciatis laudantium
+        </p>
+      </article>
+      <div class="aboutArticle">
+        <article>
+          <h3>Infos about me</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus architecto error quibusdam veniam
+            distinctio,
+            rem quod beatae et voluptas nesciunt officia cum quo quos aliquam soluta cupiditate, praesentium, sint a!
+          </p>
+        </article>
+        <article>
+          <h3>My Skills</h3>
+          <div class="skills">
+            <img src="./images/Html5.svg" alt="Html Logo">
+            <img src="./images/Css.svg" alt="Css Logo">
+            <img src="./images/javascript.svg" alt="Javascript Logo">
+            <img src="./images/git.svg" alt="Git Logo">
+            <img src="./images/github.svg" alt="Github Logo">
+            <img src="./images/google.svg" alt="Google Logo">
+            <img src="./images/vscode.svg" alt="Vscode Logo">
+            <img src="./images/terminal.svg" alt="Terminal Logo">
+            <img src="./images/markdown.svg" alt="Markdown Logo">
+          </div>
+      </div>
+      </article>
+
+
+    </section>
+
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <hr>
+      <div class="myProjects">
+        <div class="projectCards">
+          <a href="#" target="_blank"><img class="projectImg" src="./images/Dice_game.JPG" alt="">
+            <div class="cardInner">
+              <h4>Dice Game</h4>
+          </a>
+
+        </div>
+      </div>
+      <div class="projectCards">
+        <a href="#" target="_blank"><img class="projectImg" src="./images/ExpandingCards.JPG" alt="">
+          <div class="cardInner">
+            <h4>Expanding Cards</h4>
+        </a>
+      </div>
+      </div>
+      <div class="projectCards">
+        <a href="#" target="_blank"><img class="projectImg" src="./images/3D_HoverEffect.JPG" alt="">
+          <div class="cardInner">
+            <h4>3D HoverEffect</h4>
+        </a>
+      </div>
+      </div>
+      <div class="projectCards">
+        <a href="#" target="_blank"><img class="projectImg" src="./images/3D_HoverEffect.JPG" alt="">
+          <div class="cardInner">
+            <h4>3D HoverEffect</h4>
+        </a>
+      </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Contact</h2>
+      <hr>
+
+      <form action="POST" class="formular">
+
+        <label for="firstName">First Name</label>
+        <input id="firstName" name="name" type="text" required placeholder="Enter your first Name">
+
+
+        <label for="lastName">Last Name</label>
+        <input id="lastName" name="name" type="text" required placeholder="Enter your Last Name">
+
+
+        <label for="email">Your Email:</label>
+        <input type="email" name="email" id="email" required placeholder="Enter your E-Mail">
+
+
+        <label for="message">Your Message</label>
+        <textarea name="message" id="message" cols="30" rows="5" required placeholder="Enter your message"></textarea>
+
+        <input type="submit" id="submit" class="btn" value="Submit">
+
+      </form>
+    </section>
+  </main>
+
+  <footer>
+
+    <h4>Socials </h4>
+
+    <div class="logoLinks">
+      <a href="https://github.com/PhilV1" target="_blank"><i class="fa-brands fa-github"
+          style="color: #ffffff;"></i></a>
+      <a href="#" target="_blank"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
+      <a href="#" target="_blank"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+      <a href="#" target="_blank"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
