@@ -126,6 +126,7 @@ a {
   height: 40px;
   width: 40px;
   object-fit: cover;
+  object-position: top;
 }
 
 /* If screen <650px display dropdown */
@@ -217,9 +218,13 @@ a {
   position: relative;
   display: inline-block;
   bottom: -20px;
-  margin-right: 0.5rem;
   font-size: 5rem;
   opacity: 0;
+}
+
+/* Gap between Name */
+.myName:nth-of-type(1) {
+  margin-right: 1rem;
 }
 
 .myName.active {
@@ -313,6 +318,10 @@ a {
   section {
     min-height: 50vh;
   }
+}
+
+.skill img {
+  background-color: var(--maincolor);
 }
 
 /* Projects */
