@@ -320,8 +320,8 @@ a {
   }
 }
 
-.skill img {
-  background-color: var(--maincolor);
+.skills img {
+  border-radius: 1rem;
 }
 
 /* Projects */
