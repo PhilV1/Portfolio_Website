@@ -248,8 +248,7 @@ a {
   gap: 1rem;
   height: 100vh;
 
-  background: url(https://img.freepik.com/free-vector/hand-painted-watercolor-abstract-watercolor-background_23-2149007169.jpg?w=1060&t=st=1699878251~exp=1699878851~hmac=3803ac3e213727106582524371effad9a293082f7c389d89018fb97842d9840f)
-    no-repeat center/cover;
+  background: url(./images/background.jpg) no-repeat center/cover;
 }
 
 /* Logos Intro */
@@ -295,6 +294,26 @@ a {
   font-weight: bold;
   font-size: 1.7rem;
   transition: all 0.3s ease-in-out;
+  animation: pulseBtn 2s infinite;
+}
+
+/* Animation for Btn */
+@keyframes pulseBtn {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.05;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+/* Animation stop on hover */
+.btn.intro:hover {
+  animation: none;
+  cursor: pointer;
 }
 
 /* About */
