@@ -471,9 +471,10 @@ footer {
   height: 10rem;
 }
 
-footer > h5 {
+footer > p {
   margin-top: 1rem;
   color: white;
+  font-size: 1.2rem;
 }
 
 .logoLinks {
